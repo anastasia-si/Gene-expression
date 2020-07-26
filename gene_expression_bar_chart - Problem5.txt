@@ -1,0 +1,11 @@
+Food for thought:
+
+A simple bar chart doesn’t let us see sample-level variations in the provided data set. Suggest one or more visualization ideas (no code is required) that will allow us to see how PTEN’s expression varies across tissues at the sample level.
+
+>> 
+
+There are different ways of visualizing gene expression data.
+
+The most common way of visualizing expression data sets is a heatmap. The data is displayed as a grid where rows represent a set of genes, and each column represents a sample. The heatmap can also be combined with clustering methods which group genes and/or samples together based on the similarity of their gene expression pattern.
+
+If we have only one gene, then we can use box plots (box-and-whisker plots), violin plots.
