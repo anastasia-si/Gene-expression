@@ -66,6 +66,17 @@
         .attr("width", x.bandwidth())
         .attr("height", function (d) { return height - y(d.medianValue); });
 
+      // data labels
+        svg.selectAll(".text")  		
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("class","label")
+        .attr("x", (function(d) { return x(d.tissueSiteDetailId) + 2; }  )) 
+        .attr("y", function(d) { return y(d.medianValue) - 10; })
+        .attr("dy", "0.75em")
+        .text(function(d) { return Math.round(d.medianValue); });
+
       // x Axis
       svg.append("g")
         .attr("class", "axis")

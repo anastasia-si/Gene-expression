@@ -24,3 +24,7 @@ html, body {
 .bar {
   fill: #8c629a;
 }
+
+.label {
+  font-size: 10px;
+}
