@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.chart-container {
+  margin: 20px 10px 70px;
+}
+
+.chart-title {
+  font-size: 24px;
+}
+
+.axis {
+  font-size: 16px;
+  font-weight: normal;
+  font-family:"Times New Roman";
+}
+
+.axis text {
+  fill: black;
+}
+
+.bar {
+  fill: #8c629a;
+}
