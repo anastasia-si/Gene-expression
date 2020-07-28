@@ -120,18 +120,6 @@
         return d.tissueSiteDetailId;
       }))
 
-      // reorder the bar elements
-      svg.selectAll("rect")
-        .sort(function (a, b) {
-          if (a[sort_field] < b[sort_field]) {
-            return -1 * sort_order;
-          }
-          if (a[sort_field] > b[sort_field]) {
-            return 1 * sort_order;
-          }
-          return 0;
-        });
-
       // transition the bar elements and labels to the new positions 
       var transition = svg.transition().duration(500),
         delay = function (d, i) {

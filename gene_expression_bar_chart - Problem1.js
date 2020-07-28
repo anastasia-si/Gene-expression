@@ -89,9 +89,11 @@
         .attr("transform", "rotate(-65)");
 
       // y Axis
+      yAxisTicks = d3.axisLeft(y)
+          .ticks(3)
       svg.append("g")
         .attr("class", "axis")
-        .call(d3.axisLeft(y))
+        .call(yAxisTicks)
         .append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 6)
@@ -99,7 +101,7 @@
         .text("Median");
     })
     .catch(function (error) {
-      return console.error(err);
+      return console.error(error);
     });
 
 })();
